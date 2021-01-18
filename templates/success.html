@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+     <link rel="shortcut icon"  href="../static/favicon.png">
+    <link rel="stylesheet" href="../static/style.css" />
+    <title>Thank You!</title>
+  </head>
+  <body>
+    <div class="container">
+      <img src="../static/logo.png" alt="" class="logo" />
+       {% if name %}
+      <h1 class="name">Thank you {{ name | safe }} for rating your experience.</h1>
+      {% endif %}
+        <h1>We hope to see you soon!</h1>
+
+    </div>
+  </body>
+</html>
